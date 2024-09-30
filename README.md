@@ -1,52 +1,41 @@
-Civiconnect
+# Civiconnect
 
-Civiconnect is a full-stack web application designed to improve civic engagement by providing a platform for users and government bodies to collaborate on infrastructure, services, and initiatives.
+Civiconnect is a full-stack web application designed to improve civic engagement by providing a platform for users and government bodies to collaborate on infrastructure, services, and initiatives. The application facilitates easy communication, access to services, and transparency in governance.
 
-Table of Contents
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-	•	Overview
-	•	Features
-	•	Installation
-	•	Backend Setup
-	•	Frontend Setup
-	•	Usage
-	•	API Endpoints
-	•	Technologies Used
-	•	Contributing
-	•	License
+## Features
+- User and Government Login: Separate login functionalities for regular users and government officials.
+- Dashboard: Intuitive dashboards for users and government bodies to access relevant information.
+- Service Options: Users can access various services related to infrastructure and initiatives.
+- Role-Based Access: Different functionalities based on user roles to ensure proper access control.
+- Responsive Design: Mobile-friendly design for accessibility on different devices.
 
-Overview
+## Technologies Used
+- **Frontend:**
+  - React.js
+  - Bootstrap
+  - CSS
 
-Civiconnect allows users to log in and explore government initiatives, infrastructure projects, and public services. It offers two types of login: User and Government. Users can view available services and initiatives, while government officials can manage and update them.
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
+  - Mongoose
+  - JWT for authentication
+  - Bcrypt for password hashing
 
-Features
+## Installation
 
-User Features
+To get a local copy up and running, follow these simple steps:
 
-	•	View available infrastructure projects
-	•	Explore government-provided services
-	•	Learn about civic initiatives
-	•	Easy navigation between services and initiatives
-
-Government Features
-
-	•	Add, edit, or remove infrastructure projects
-	•	Manage public services
-	•	Create and promote civic initiatives
-
-Authentication
-
-	•	JWT-based authentication for both users and government officials
-	•	Role-based access control for different functionalities
-
-Installation
-
-Follow the steps below to set up the project locally.
-
-Prerequisites
-
-Ensure you have the following installed:
-
-	•	Node.js (version 14+)
-	•	MongoDB (for backend database)
-	•	Git (for version control)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yashdargude/civiconnect.git
