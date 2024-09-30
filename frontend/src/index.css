@@ -1,0 +1,179 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px; /* Increase form width */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.7s ease-in-out;
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600; /* Slightly bold */
+  color: #333;
+}
+
+label {
+  font-size: 16px;
+  color: #555; /* Lighter font color */
+  margin-bottom: 8px;
+  font-weight: 400; /* Lighter font weight */
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  width: 100%;
+  width: 325px; /* Adjusted max width for larger input boxes */
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.container input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+  color: #888; /* Subtle placeholder color */
+}
+
+.container input:focus {
+  border-color: #667eea; /* Highlight the input on focus */
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.3); /* Add a glowing effect */
+}
+
+.container select {
+  width: 100%;
+  width: 325px; /* Match the width of input fields */
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #fff; /* Ensure background is white */
+  color: #333;
+  cursor: pointer; /* Add a pointer cursor for better UX */
+}
+
+.container select:focus {
+  border-color: #667eea; /* Match the input focus border color */
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.3); /* Add a glowing effect */
+}
+
+.container select option {
+  font-size: 16px;
+  color: #333; /* Set the font color for options */
+}
+
+/* Placeholder styling for the select (like 'Choose your role') */
+.container select option[disabled] {
+  color: #888; /* Subtle color for disabled option */
+}
+
+.container select:hover {
+  border-color: #554cbf; /* Darken border on hover */
+}
+
+
+
+
+
+
+button {
+  background-color: #667eea;
+  border: none;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:hover {
+  background-color: #554cbf; /* Darken on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+button:active {
+  transform: translateY(0); /* Return to original position on click */
+}
+
+span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+span a {
+  color: #667eea;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+span a:hover {
+  color: #554cbf;
+  text-decoration: underline;
+}
+
+.Toastify__toast--success {
+  background-color: #38b000 !important; /* Custom success toast */
+}
+
+.Toastify__toast--error {
+  background-color: #d00000 !important; /* Custom error toast */
+}
+
+/* Add a fade-in animation for smooth load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
